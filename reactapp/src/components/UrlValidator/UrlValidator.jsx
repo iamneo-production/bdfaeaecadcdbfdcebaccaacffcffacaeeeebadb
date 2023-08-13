@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React, { useState } from 'react';
  
 const UrlValidator = () => {
  
@@ -17,7 +17,7 @@ const UrlValidator = () => {
  
     const convertJson = (jsonString) => {
         const jsonObject = JSON.parse(jsonString);
-        const params = "?" + Object.entries(jsonObject).map((e) => e.join("=")).join("&");
+        const params="?" + Object.entries(jsonObject).map((e) => e.join("=")).join("&");
         return params;
     }
  
